@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	background: #efefef;
+	width: 100%;
+	height: 4rem;
+	display: flex;
+}
+.navbar{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+ .navbar  {
+ 	list-style-type: none;
+ }
+
+ .heading{
+ 	height: 80%;
+ }
