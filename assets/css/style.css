@@ -16,19 +16,51 @@ nav{
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0 auto;
+	padding: 1rem;
 }
- .navbar  {
 
- }
 
 .banner{
 	height: 90vh;
 	width: 100vw;
+
 	display: flex;
+	justify-content: space-evenly;
 	background: #efffef;
+
+}
+.img-container{
+	border: black;
 }
 
  .img-container > img {
- 	height: 500px;
- 	width: 400px;
+ 	height: auto;
+ 	width: 100%;
+ 	padding: auto;
+
+ }
+
+ .section-wrapper{
+
+ 	height: 50vh;
+ 	padding-inline: 25%;
+ 	padding-top: 5%;
+ }
+
+ .section-wrapper h2{
+ 	text-align: center;
+ }
+
+.projects{
+	background: navajowhite;
+}
+
+ .skills{
+ 	background: slateblue;
+
+ }
+
+ .grid-container{
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr;
  }
