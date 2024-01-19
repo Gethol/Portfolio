@@ -6,15 +6,22 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://kit.fontawesome.com/f9a14018b0.js" crossorigin="anonymous"></script>
-	
+	<script src="nav.js" defer></script>
+
 </head>
 <body>
-<header>
+<header class="primary-header">
+	
+	<button class="mobile-nav-toggle " aria-controls="navbar" aria-expanded="false">
+		<span class="sr-only">Menu</span></button>
 	<nav>
-		<ul class="navbar">
-			<li><a href="#">About Me</a></li>
-			<li><a href="#">Skills</a></li>
-			<li><a href="#">Projects</a></li>
+		<ul id="navbar" data-visible="false" class="navbar flex">
+			<li>
+				<a href="#"><span>Home</span></a>
+			</li>
+			<li><a href="#"><span>About Me</span></a></li>
+			<li><a href="#"><span>Skills</span></a></li>
+			<li><a href="#"><span>Projects</span></a></li>
 		</ul>
 	</nav>
 </header>
@@ -105,8 +112,9 @@
 <section class="section-wrapper projects">
 	<h2>Projects</h2>
 	<div class="grid-container">
+		
 		<div class="project-card">
-			<img src="assets/public/real_estate.jpg" alt="">	
+			<img src="assets/public/real_estate.jpg" alt="">
 			<h3>Esoma Website</h3>
 			<h4>HTML,CSS,Javascript</h4>
 			<p>As part of my coursework for my Human-Computer Interaction class, my group and I redesigned Esoma, a platform that provides learning resources to students. The project involved evaluating the original website and then revamping the website improve the UI and UX of the website.</p>

@@ -24,41 +24,90 @@ body{
 	justify-content: space-between;
 	margin: 0;
 
+	overflow-x: hidden;
+
 }
 
 
-nav{
-	background: #ffffff;
-	width: 100%;
-	height: 10vh;
-	margin: 0;
-	position: sticky;
-	font-weight: 600;
-}
-.navbar{
+
+.flex{
 	display: flex;
-	list-style-type: none;
-	justify-content: space-evenly;
+	gap: var(--gap, 2rem);
+}
+
+
+/*  header */
+header{
+	display: flex;
 	align-items: center;
-	margin: 0 ;
-	padding-block: 1rem;
-	color: var(--midnight-blue);
+	justify-content: space-around;
+	font-weight: 600;
 	position: sticky;
 }
+.mobile-nav-toggle{
+	display: none;
+}
 
-.navbar a{
+.navbar{
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+	background: hsl(0, 0%, 100% / 0.75);
+	backdrop-filter: blur(1rem);
+
+
+	
+}
+
+
+.navbar a {
 	text-decoration: none;
-	font-size: 1.1rem;
-	color: var(--midnight-blue);
-		
 }
 
-.navbar a:hover{
-	/* color: blue; */
-	text-decoration: underline;
-	line-height: 1.1;
-	font-size: 1.25rem;
+
+@media (max-width: 35em){
+	.navbar{
+		--gap: 2em;
+		inset: 0 0 0 30%;
+		position: fixed;
+		
+		flex-direction: column;
+		padding: min(30vh, 10rem) 2rem;
+		z-index: 1000;
+	
+
+		transform: translateX(100%);
+		transition: transform, 300ms ease-in ;
+		
+
+	}
+
+	.navbar[data-visible='true']{
+		transform: translateX(50%);
+
+	}
+
+
+	.mobile-nav-toggle{
+		display: block;
+		position: absolute;
+		background-color: transparent;
+		background-image: url("../icons/icon-hamburger.svg"); 
+		background-repeat: no-repeat;
+		border: 0;
+		z-index: 9999;
+		width: 2rem;
+		aspect-ratio: 1;
+		top: 2rem;
+		right: 2em;
+	}
+
+	.mobile-nav-toggle[aria-expanded ="true"]{
+		background-image:url("../icons/icon-close.svg") ;
+	}
 }
+
+
 
 
 .banner{
@@ -174,6 +223,7 @@ a img{
 	/* text-align: center; */
  }
 
+ 
  .project-card{
 	/* box-shadow: 10px 10px #888888;
 	border-radius: .5rem;
@@ -182,7 +232,10 @@ a img{
 	padding: 2rem; */
 	display: flex;
 	flex-direction: column;
-	background: #f6f6f6;
+	background: #ffffff;
+	height: 620px;
+	width: 465px;
+	margin: auto;
 
  }
  .project-card img{
@@ -190,6 +243,8 @@ a img{
 	width: 100%;
 	padding: 0;
  }
+
+ 
 
  .project-card h4{
 	font-weight: 500;
