@@ -151,6 +151,7 @@ a img{
 } */
 
 .btn{
+	margin-top: 3%;
 	padding: 1.5rem 2.5rem;
 	border: 2px solid;
 	text-align: center;
@@ -186,6 +187,7 @@ a img{
 	align-items: center;
 	margin-inline: 25%;
 	background-color: #f6f6f6;
+	padding-top: 10%;
 	
 
 }
@@ -193,45 +195,18 @@ a img{
 .project-card{
 	border: solid;
 	padding: 3em;
-	/* background-color: navajowhite; */
 	text-decoration: none;
 }
 
-.project-card:hover{
-	background-color: #5c5353;
+.project:hover{
+	background-color: hsla(0, 1%, 27%, 0.082);
 }
 .project-card h4{
 	color: #5757A7;
-	font-weight: 400;
-	font-style: italic;
+	font-weight: 500;
+	/* font-style: italic; */
 }
  
-
- /* .project-card{ */
-	/* box-shadow: 10px 10px #888888;
-	border-radius: .5rem;
-	min-width: min-content;
-	max-width: 32rem;
-	padding: 2rem; */
-	/* display: flex;
-	flex-direction: column;
-	background: #ffffff;
-	height: 620px;
-	width: 465px;
-	margin: auto;
-
- }
- .project-card img{
-	max-width: 100%;
-	width: 100%;
-	padding: 0;
- }
-
- 
-
- .project-card h4{
-	font-weight: 500;
- } */
 
  .card img {
 	height: 80px;
@@ -241,7 +216,7 @@ a img{
 
  .contact-wrapper{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	gap: 2.5rem;
 
  }
@@ -252,7 +227,10 @@ a img{
 
  footer{
 	color: var(--midnight-blue);
-	background: #f6f6f6;
+	padding-block: 1%;
+	margin-top: 1%;
+	background: hsla(0, 1%, 27%, 0.082);
+	width: 100%;
 	
  }
 
@@ -301,7 +279,6 @@ a img{
 	.mobile-nav-toggle[aria-expanded ="true"]{
 		background-image:url("../icons/icon-close.svg") ;
 	}
-
 	.banner{
 		grid-auto-flow: column;
 		grid-template-rows: 1fr 1fr;
@@ -322,6 +299,7 @@ a img{
 
 	.contact-wrapper{
 		flex-direction: column;
+		gap: 0.25rem;
 		font-weight: 500;
 	}
 }
