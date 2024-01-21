@@ -132,23 +132,6 @@ a img{
 	justify-content: stretch;
 	gap: 1rem;
  }
- /* .btn{
- 	border: solid;
-	padding: 0.75rem 1.5rem;
-	color: #ffffff;
-	background-color: var(--midnight-blue);
-	border-radius: 1rem; */
-/*	text-transform: uppercase;*/
-	/* text-align: center;
-	text-decoration: none;
-	font-weight: 600;
-	height: 4rem;
-	width: 9rem;
- }
- .btn:hover{ */
-	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
-	/* padding: 1.5rem 3rem;
-} */
 
 .btn{
 	margin-top: 3%;
@@ -156,9 +139,13 @@ a img{
 	border: 2px solid;
 	text-align: center;
 	background-color: #5757A7;
-	font-weight: 500;
+	font-weight: 600;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.btn:hover{
+	background-color: #43437e;
 }
 
 
